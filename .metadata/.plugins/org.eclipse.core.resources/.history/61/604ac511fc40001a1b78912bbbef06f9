@@ -1,0 +1,14 @@
+package firstProject;
+
+public class myFirstClass {
+	public static void main(String[] args) {
+		int a = 48;
+		int b =19;
+		double pi =3.1415;
+		string greeting="hello there";
+		
+		System.out.println(a*b/pi);
+		 System.out.println( greeting);
+	}
+
+}

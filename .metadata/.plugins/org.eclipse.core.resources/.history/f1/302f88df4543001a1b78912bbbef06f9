@@ -1,0 +1,23 @@
+package com.qa.garage;
+
+public abstract class Vehicle {
+	public abstract void move();
+	public int speed=0;
+	public int altitude=1;
+	public int passengers;
+	
+	
+	public int getPassengers() {
+		return passengers;
+	}
+
+
+	public void setPassengers(int passengers) {
+		this.passengers = passengers;
+	}
+	
+	
+	
+	
+
+}

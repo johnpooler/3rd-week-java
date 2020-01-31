@@ -1,0 +1,37 @@
+package firstProject;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Scope {
+	static int number = 4;// class variable
+
+	public static void main(String[] args) {
+
+	
+
+		ArrayList<String> names = new ArrayList<String>();
+		names.add("jackinthebox");
+		names.add("papajohn's");
+		names.add("chipotle");
+		names.stream().forEach(sponge -> System.out.println(sponge));
+		List<String> passed = names.stream().filter(restaurant -> !(restaurant.equals("chipotle"))).map(name-> name +" is trash").collect(Collectors.toList());
+		System.out.println(passed.size());
+		System.out.println(passed);
+		
+		
+		
+
+
+		// method
+		number = 6;
+		printy();
+
+	}
+
+	public static void printy() {
+		System.out.println(number);
+
+	}
+}

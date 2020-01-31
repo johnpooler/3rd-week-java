@@ -1,0 +1,19 @@
+package com.qa.garage;
+
+public class Runner {
+
+	public static void main(String[] args) {
+//		Vehicle vehicle = new Vehicle(); wont work as Vehicle is abstract
+		Car car = new Car();
+		car.move();
+		
+		Motorbike honda=new Motorbike();
+		honda.move();
+		
+		
+		Vehicle aCar= new Car();
+		aCar.move();
+		
+	}
+
+}

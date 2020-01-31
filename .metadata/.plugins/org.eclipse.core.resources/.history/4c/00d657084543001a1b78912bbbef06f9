@@ -1,0 +1,10 @@
+package com.qa.garage;
+
+public abstract class Vehicle {
+	public abstract void move();
+	public int speed=0;
+	public int altitude=1;
+	
+	
+
+}

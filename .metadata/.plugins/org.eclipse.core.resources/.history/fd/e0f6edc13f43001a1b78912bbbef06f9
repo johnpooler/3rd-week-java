@@ -1,0 +1,10 @@
+package com.qa.garage;
+
+public class Motorbike extends Vehicle{
+	@Override
+	public void move() {
+		this.speed+=3;
+		System.out.println("miooooooo");
+	}
+
+}

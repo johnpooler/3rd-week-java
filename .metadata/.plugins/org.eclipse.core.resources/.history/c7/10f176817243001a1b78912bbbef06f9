@@ -1,0 +1,22 @@
+package com.qa.calculator;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class CalculatorTest {
+	@Test
+	public void sumTest() {
+		Calculator calculator= new Calculator();
+		assertEquals(13, calculator.addition(5, 8));
+		
+	}
+	@Test
+	public void subtractionTest() {
+		Calculator calculator= new Calculator();
+		assertEquals(-40, calculator.substraction(20, -60));
+		
+	}
+	
+
+}

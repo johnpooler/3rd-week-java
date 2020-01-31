@@ -1,0 +1,29 @@
+package com.qa.circus;
+
+public class Elephant {
+	String species = "asian";
+	String colour = "grey";
+	String country;
+	int legs = 4;
+	int hair;
+
+	public void haveMudBath() {
+		colour = "brown";
+	}
+
+	public void getPainted(String paint) {
+		colour = paint;
+	}
+
+	public void countryBirth(String place) {
+		country = place;
+		
+	}
+	public Elephant(String mySpecies, String myColour, int myLegs) {
+		System.out.println("an Elephant iis born...");
+		species=mySpecies;
+		colour=myColour;
+		legs=myLegs;
+	}
+
+}

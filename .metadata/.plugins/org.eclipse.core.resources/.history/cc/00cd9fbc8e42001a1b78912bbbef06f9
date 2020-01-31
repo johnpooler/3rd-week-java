@@ -1,0 +1,16 @@
+package com.qa.banking;
+
+public class Bank {
+	public static void main(String[] args) {
+
+		BankAccount john = new BankAccount();
+
+//		john.addMoney(100);
+		john.setBalance(100);
+
+//		System.out.println(john.balance); for public int balance
+		System.out.println(john.getBalance());//private method
+
+	}
+
+}

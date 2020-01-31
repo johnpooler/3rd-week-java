@@ -1,0 +1,33 @@
+package firstProject;
+
+public class Scope {
+	static int number = 4;// class variable
+
+	public static void main(String[] args) {
+
+		number = 6;
+		System.out.println(number);
+		printy();
+
+		int catCount = 0;
+		while (true) {
+			System.out.println("another one");
+			++catCount;
+
+		}
+////		System.out.println("finally enough cats");
+////		System.out.println("i have " + catCount + " catz");
+//		
+//		
+//		for (int kitties=0; kitties<10; kitties++) {
+//			System.out.println("another kitty");
+//		}
+//		System.out.println ("kitties are enough kitties for today");
+
+	}
+
+	public static void printy() {
+		System.out.println(number);
+
+	}
+}

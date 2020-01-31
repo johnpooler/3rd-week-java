@@ -1,0 +1,53 @@
+package firstProject;
+
+public class Scope {
+	static int number = 4;// class variable
+
+	public static void main(String[] args) {
+
+		// arrays
+		String name = "james";
+		String[] row2 = { name, "tyler", "juamal" };
+		System.out.println(row2[1]);
+		row2[1] = "taiwo";
+		System.out.println(row2[1]);
+		System.out.println(row2);
+
+		String[] row5 = { "nisha", "laurence", "ashima" };
+		String[] row6 = { "doug", "josh", "sam", "jeeven" };
+		String[] row7 = { "mumba", "prem" };
+		String[][] room = { row5, row6, row7 };
+		
+		//pull out names from room
+//		System.out.println(row5[2] + " " + row6[1] + " " + row7[0]);
+		System.out.println(room[0][2] + " " + room[1][1] + " " + room[2][0]);
+		room[0][1] = "jess";
+		System.out.println(upperCase(room[0][1]));
+
+		number = 6;
+		printy();
+
+		// while
+		int catCount = 0;
+		while (catCount <= 6) {
+			System.out.println("another one");
+			++catCount;
+
+		}
+		System.out.println("finally enough cats");
+		System.out.println("i have " + catCount + " catz");
+
+		// for
+		int kitties = 0;
+		for (; kitties < 10; kitties++) {
+			System.out.println("another kitty");
+		}
+		System.out.println(kitties + " kitties are enough kitties for today");
+
+	}
+
+	public static void printy() {
+		System.out.println(number);
+
+	}
+}

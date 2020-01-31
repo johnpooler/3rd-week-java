@@ -1,0 +1,28 @@
+package firstProject;
+
+public class myFirstClass {
+	public static void main(String[] args) {
+		isDivisible(500, 250);
+		int a = 64;
+		int b = 19;
+		
+		char letter = 'a';
+		letter++;
+		System.out.println(letter);
+
+	
+		String greeting = "hello there";
+		System.out.println(greeting);
+
+		System.out.println(b++);
+		System.out.println(b);
+		System.out.println(++a);
+		System.out.println(a);
+		System.out.println("a is divisible by 4?" + (" ") + (a % 4 == 0));
+	}
+
+	public static void isDivisible(int num, int divider) {
+		System.out.println(num % divider == 0);
+
+	}
+}

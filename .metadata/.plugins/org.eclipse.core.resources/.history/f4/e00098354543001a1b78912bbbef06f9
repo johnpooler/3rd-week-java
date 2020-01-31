@@ -1,0 +1,46 @@
+package com.qa.garage;
+
+import java.util.ArrayList;
+
+public class Garage {
+
+	public static void main(String[] args) {
+//		Vehicle vehicle = new Vehicle(); wont work as Vehicle is abstract
+		Car lambo = new Car();
+		lambo.move();
+		System.out.println("your car has " + lambo.getGas() + " gallons of gas");
+
+		Motorbike honda = new Motorbike();
+		honda.move();
+		Motorbike kawasaki=new Motorbike();
+		kawasaki.trick();
+		
+		Train thomas = new Train();
+		
+//		System.out.println(honda.speed());
+		ArrayList<Vehicle> modesOfTransport= new ArrayList<Vehicle>();
+		
+		modesOfTransport.add(lambo);
+		modesOfTransport.add(kawasaki);
+		modesOfTransport.add(honda);
+		modesOfTransport.add(thomas);
+		
+		for(Vehicle potato : modesOfTransport) {
+			System.out.println(modesOfTransport);
+		}
+		
+		
+		
+
+		
+		
+		
+		
+		Vehicle aCar = new Car();
+		aCar.move();
+		
+		
+
+	}
+
+}

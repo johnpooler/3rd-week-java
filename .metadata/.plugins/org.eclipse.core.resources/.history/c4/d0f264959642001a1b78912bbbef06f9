@@ -1,0 +1,17 @@
+package com.qa.evolution;
+
+public class Runner {
+	public static void main(String[] args) {
+		Snake kobe = new Snake();
+		kobe.bite();
+		kobe.getLength();
+		RattleSnake leBron=new RattleSnake();
+		leBron.bite();
+		leBron.setLength(5);
+		leBron.getLength();
+		
+		
+		
+	}
+
+}

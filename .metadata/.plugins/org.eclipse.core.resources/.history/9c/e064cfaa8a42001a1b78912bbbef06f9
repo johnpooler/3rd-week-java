@@ -1,0 +1,12 @@
+package firstProject;
+
+public class BankAccount {
+	int balance=0;
+	public void addmoney
+	
+
+}
+public class Bank{
+	BankAccount john= new BankAccount();
+	
+}

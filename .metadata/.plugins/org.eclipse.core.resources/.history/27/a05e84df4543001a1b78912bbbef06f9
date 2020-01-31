@@ -1,0 +1,17 @@
+package com.qa.garage;
+
+public class Car extends Vehicle{
+	private int gas= 100;
+	@Override
+	public void move() {
+		this.speed+=5;
+		System.out.println("bruuuum");
+	}
+	public int getGas() {
+		return gas;
+	}
+	public void setGas(int gas) {
+		this.gas = gas;
+	}
+	
+}

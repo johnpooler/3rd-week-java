@@ -1,0 +1,25 @@
+package com.qa.circus;
+
+public class Application {
+	public static void main(String[] args) {
+
+		Elephant dumbo = new Elephant();
+		Elephant nelly = new Elephant();
+		nelly.legs = 8;
+		System.out.println(dumbo.colour);
+		System.out.println(nelly.colour);
+		System.out.println(dumbo.legs);
+		System.out.println(nelly.legs);
+		System.out.println(dumbo.hair);
+		System.out.println(nelly.hair);
+		
+		dumbo.haveMudBath();
+		System.out.println("mudbath: dumbo is now " + dumbo.colour);
+		dumbo.getPainted("purple");
+		System.out.println("paintshop: dumbo is now " + dumbo.colour);
+		nelly.countryBirth("botswana");
+		System.out.println(nelly.country);
+
+	}
+
+}

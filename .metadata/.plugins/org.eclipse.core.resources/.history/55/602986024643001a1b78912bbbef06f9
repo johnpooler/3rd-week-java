@@ -1,0 +1,11 @@
+package com.qa.garage;
+
+public class Train extends Vehicle{
+	@Override
+	public void move() {
+		this.speed+=10;
+		System.out.println("choooochoooo");
+	}
+	
+
+}
